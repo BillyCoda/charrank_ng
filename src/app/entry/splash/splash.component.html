@@ -1,1 +1,13 @@
-<p>splash works!</p>
+<div class="container">
+  <div class="main-title">
+    Character Ranker!
+  </div>
+  <div class="l-cont links" *ngIf="!showLogin" (click)="toggleLogin()">
+    <a class="login">Login</a>
+  </div>
+  <app-login *ngIf="showLogin"></app-login>
+  <div class="s-cont links" *ngIf="!showSignup" (click)="toggleSignup()">
+    <a class="signup">Sign up</a>
+  </div>
+  <app-signup *ngIf="showSignup"></app-signup>
+</div>
