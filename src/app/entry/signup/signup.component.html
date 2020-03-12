@@ -9,13 +9,21 @@
     <span class="label">
       Password:
     </span>
-    <input type="password" name="password" class="inputs" id="password" appPassword />
+    <input type="password" name="password" class="inputs" id="password" />
   </div>
   <div class="password">
     <span class="label">
       Verify password:
     </span>
-    <input type="password" name="password" class="inputs" id="password" />
+    <input
+      type="password"
+      name="password"
+      class="inputs"
+      id="password-verify"
+    />
   </div>
-  <input type="checkbox" name="show-password" id="show-hide">
+  <div class="checkbox-container" (click)="togglePassword()">
+    <input type="checkbox" name="show-password" id="show-hide" />
+    <label for="show-hide" class="checkbox-label">Show password</label>
+  </div>
 </div>

@@ -24,7 +24,7 @@ import { PasswordDirective } from './directives/password.directive';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PasswordDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
