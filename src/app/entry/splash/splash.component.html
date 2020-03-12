@@ -2,12 +2,12 @@
   <div class="main-title">
     Character Ranker!
   </div>
+  <app-login *ngIf="showLogin"></app-login>
+  <app-signup *ngIf="showSignup"></app-signup>
   <div class="l-cont links" *ngIf="!showLogin" (click)="toggleLogin()">
     <a class="login">Login</a>
   </div>
-  <app-login *ngIf="showLogin"></app-login>
   <div class="s-cont links" *ngIf="!showSignup" (click)="toggleSignup()">
     <a class="signup">Sign up</a>
   </div>
-  <app-signup *ngIf="showSignup"></app-signup>
 </div>

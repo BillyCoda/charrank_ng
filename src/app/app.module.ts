@@ -8,6 +8,7 @@ import { SignupComponent } from './entry/signup/signup.component';
 import { SplashComponent } from './entry/splash/splash.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { HomeComponent } from './main/home/home.component';
+import { PasswordDirective } from './directives/password.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './main/home/home.component';
     SignupComponent,
     SplashComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    PasswordDirective
   ],
   imports: [
     BrowserModule,
