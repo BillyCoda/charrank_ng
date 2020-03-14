@@ -23,4 +23,8 @@ export class SignupComponent implements OnInit {
       });
     });
   }
+
+  trySignup() {
+    // change something to say hi
+  }
 }

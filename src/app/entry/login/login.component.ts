@@ -24,4 +24,8 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  tryLogin() {
+    // authguard is go
+  }
+
 }
