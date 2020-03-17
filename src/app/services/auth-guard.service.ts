@@ -11,7 +11,7 @@ export class AuthGuardService implements CanActivate {
   canActivate() {
     const rando = Math.floor(Math.random() * 10);
 
-    if (rando > 5) {
+    if (rando > 0) {
       return true;
     } else {
       this.router.navigate(['']);

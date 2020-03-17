@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PasswordDirective } from 'src/app/directives/password.directive';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { PasswordDirective } from 'src/app/directives/password.directive';
 export class LoginComponent implements OnInit {
   private passShown = false;
 
-  constructor(private pwdDir: PasswordDirective) { }
+  constructor(private pwdDir: PasswordDirective, private router: Router) { }
 
   ngOnInit() {
   }
@@ -26,6 +27,9 @@ export class LoginComponent implements OnInit {
 
   tryLogin() {
     // authguard is go
+    if (true) {
+      this.router.navigate(['home']);
+    }
   }
 
 }

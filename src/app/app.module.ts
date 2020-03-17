@@ -9,6 +9,7 @@ import { SplashComponent } from './entry/splash/splash.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { HomeComponent } from './main/home/home.component';
 import { PasswordDirective } from './directives/password.directive';
+import { NavbarComponent } from './main/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PasswordDirective } from './directives/password.directive';
     SplashComponent,
     NotFoundComponent,
     HomeComponent,
-    PasswordDirective
+    PasswordDirective,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

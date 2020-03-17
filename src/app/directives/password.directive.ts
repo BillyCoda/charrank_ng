@@ -22,12 +22,12 @@ export class PasswordDirective {
 
   setup() {
     // const parent = this.el.nativeElement.parentNode;
-    const pwd = document.getElementsByName('password');
-    parent.addEventListener('click', (event) => {
-      this.shown = !this.shown;
-      pwd.forEach(passwordNode => {
-        this.toggle(passwordNode);
-      });
-    });
+    // const pwd = document.getElementsByName('password');
+    // parent.addEventListener('click', (event) => {
+    //   this.shown = !this.shown;
+    //   pwd.forEach(passwordNode => {
+    //     this.toggle(passwordNode);
+    //   });
+    // });
   }
 }
